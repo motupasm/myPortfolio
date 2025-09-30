@@ -1,0 +1,281 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survive's Portfolio</title>
+    <link rel="stylesheet" href="{% static 'style.css'%}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <nav class="navbar-container">
+        <!-- <div class=""> -->
+        <a href="#"><h1 class="nav-bar-logo">
+            <span>{</span>Survive<span>}</span>
+        </h1></a>
+        <ul class="nav-menu-list">
+            <a href="#">
+                <li class="menu-list">Home</li>
+            </a>
+            <a href="#projects">
+                <li class="menu-list">Projects</li>
+            </a>
+            <a href="#skills">
+                <li class="menu-list">Skills</li>
+            </a>
+            <a href="#about">
+                <li class="menu-list">About</li>
+            </a>
+            <a href="#contact">
+                <li class="menu-list"><button class="contact-btn">Contact</button></li>
+            </a>
+        </ul>
+        <!-- <i class="bi bi-list-nested"></i> -->
+        </div>
+
+    </nav>
+    <div class="hero-container">
+        <div class="hero-content-profile">
+            <img src="{% static 'assets/profile.jpg'%}" alt="image not found">
+            <h1 class="bio-name">
+                <span>{</span>Survive Motupa<span>}</span>
+            </h1>
+            <ul class="social-media-links-list">
+                <a href="https://github.com/motupasm" target="_blank">
+                    <li class="social-media-link"><i class="bi bi-github" title="Github"></i></li>
+                </a>
+                <a href="" target="_blank">
+                    <li class="social-media-link"><i class="bi bi-linkedin" title="Linkedin"></i></li>
+                </a>
+                <a href="https://instagram.com/18mash_" target="_blank">
+                    <li class="social-media-link"><i class="bi bi-instagram" title="Instagram"></i></li>
+                </a>
+            </ul>
+            <hr>
+        </div>
+        <div class="hero-content-bio">
+            <h1 class="badge">
+                <i class="bi bi-rocket"></i> Aspiring
+            </h1>
+            <div class="bio">
+                <h1 class="main-header">Software Engineer</h1>
+                <p class="sub-text">
+                    Computer Science Student | Junior Full-Stack Engineer | Problem Solver
+                </p>
+                <p class="sub-text1">
+                    Combining creativity and technology to design efficient, scalable <br> and practical software
+                    solutions.
+                </p>
+
+
+                <div class="hero-btns">
+                    <button class="hero-btn2">Resume</button>
+                    <a href="#projects"><button class="hero-btn">View Projects</button></a>
+                </div>
+
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="project-section">
+        <h1 class="section-header" id="projects">
+            My <span>Projects</span>
+        </h1>
+
+        <div class="project-cards">
+            <div class="project-card">
+                <div class="image-container">
+                    <h1 class="project-title">Findly - Campus Lost & Found Link</h1>
+                </div>
+                <p class="project-description">
+                    A campus-focused web app that connects people who’ve lost items with those who’ve found them, making
+                    it easy to report, search, and recover belongings quickly.
+                </p>
+                <br>
+                <hr>
+                <ul class="tech-stack">
+                    <li class="tech">
+                        HTML
+                    </li>
+                    <li class="tech">
+                        CSS
+                    </li>
+                    <li class="tech">
+                        JAVASCRIPT
+                    </li>
+                    <li class="tech">
+                        DJANGO
+                    </li>
+                    <li class="tech">
+                        SQLITE
+                    </li>
+                </ul>
+                <div class="project-btns">
+                    <a href="https://github.com/motupasm/findlyTest" target="_blank"><button
+                            class="project-btn1">Code</button></a>
+                    <a href="https://findlyapp-gajv.onrender.com/" target="_blank"><button class="project-btn">Live Demo
+                            <i class="bi bi-box-arrow-up-right"></i></button></a>
+                </div>
+
+            </div>
+            <div class="project-card">
+                <div class="image-container1">
+                    <h1 class="project-title">Housing Portal</h1>
+                </div>
+                <p class="project-description">
+                    A university housing portal that connects landlords with students, making it easy to list, search,
+                    and apply for accommodations.
+                </p>
+                <br>
+                <hr>
+                <ul class="tech-stack">
+                    <li class="tech">
+                        HTML
+                    </li>
+                    <li class="tech">
+                        CSS
+                    </li>
+                    <li class="tech">
+                        JAVASCRIPT
+                    </li>
+                    <li class="tech">
+                        FLASK
+                    </li>
+                    <li class="tech">
+                        MYSQL
+                    </li>
+                </ul>
+                <div class="project-btns">
+                    <a href="https://github.com/motupasm/univen-housing" target="_blank"><button
+                            class="project-btn1">Code</button></a>
+                    <a href="#" target="_blank"><button class="project-btn">Live Demo (Not yet deployed)
+                            <i class="bi bi-box-arrow-up-right"></i></button></a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="skills-section">
+        <h1 class="section-header">
+            My <span>Skills</span>
+        </h1>
+        <ul class="skills-container">
+            <li class="skill" id="skills">
+                <img src="{% static 'assets/html.png'%}" alt="">HTML
+            </li>
+            <li class="skill">
+                <img src="{% static 'assets/css.png'%}" alt="">CSS
+            </li>
+            <li class="skill">
+                <img src="{% static 'assets/django.png'%}" alt="">DJANGO
+            </li>
+            <li class="skill">
+                <img src="{% static 'assets/js.png'%}" alt="">JAVASCRIPT
+            </li>
+            <li class="skill">
+                <img src="{% static 'assets/mysql.png'%}" alt="">SQL
+            </li>
+            <li class="skill">
+                <img src="{% static 'assets/bootstrap.png'%}" alt="">BOOTSTRAP
+            </li>
+            <li class="skill">
+                <img src="{% static 'assets/postgres.png'%}" alt="">PostgreSQL
+            </li>
+
+        </ul>
+    </div>
+    <div class="about-me-section">
+        <h1 class="section-header" id="about">
+            About <span>Me</span>
+        </h1>
+        <p class="about-me-text">
+            I’m a Computer Science student and aspiring full-stack software engineer with a passion for building web
+            applications that solve everyday problems. From developing a campus lost-and-found platform to a university
+            housing portal, I enjoy creating solutions that make life easier for others. I’m always learning, improving
+            my skills, and excited to grow into a professional software engineer.
+        </p>
+    </div>
+    <div class="contact-section">
+        <h1 class="section-header" id="contact">
+            Contact
+        </h1>
+        <div class="contact-containers">
+
+            <div class="contact-container">
+                <h4 class="card-header">
+                    Contact Me
+                </h4>
+                <form action="" method="POST">
+                    {%csrf_token%}
+                    <div class="inputs">
+                        <label for="name">Name</label><input type="text" placeholder="your name"
+                            title="Please fil out this field" name="name" required>
+                        <label for="name">Email</label><input type="text" placeholder="example@gmail.com"
+                            title="Please fil out this field" name="email" required>
+                        <label for="name">Subject</label><input type="text" placeholder="what is this regard?"
+                            title="Please fil out this field" name="subject" required>
+                        <label for="name">Message</label><textarea name="textarea" cols="5px" rows="6rem"
+                            title="Please fil out this field" name="message" placeholder="your message here..." required></textarea>
+                        <button type="submit">Send Message</button>
+                </form>
+                {%for message in messages%}
+                {%if message%}
+                <h5 class="card-header-message">
+                    {{message}}
+                </h5>
+                {%endif%}
+                {%endfor%}
+            </div>
+
+        </div>
+        <div class="contact-container1">
+            <h4 class="card-header">
+                Socials
+            </h4>
+            <ul class="social-links">
+                <a href="" target="_blank">
+                    <li class="link">
+                        <i class="bi bi-facebook"></i> Facebook
+                    </li>
+                </a>
+                <a href="https://instagram.com/18mash_" target="_blank">
+                    <li class="link">
+                        <i class="bi bi-instagram"></i> Instagram
+                    </li>
+                </a>
+                <a href="https://github.com/motupasm" target="_blank">
+                    <li class="link">
+                        <i class="bi bi-github"></i> Github
+                    </li>
+                </a>
+                <a href="" target="_blank">
+                    <li class="link">
+                        <i class="bi bi-linkedin"></i> Linkedin
+                    </li>
+                </a>
+                <hr>
+            </ul>
+
+        </div>
+    </div>
+    </div>
+    <div class="footer-section">
+        <p class="copyright">
+            © {% now "Y" %} Motupa Survive. All rights reserved.
+        </p>
+    </div>
+
+    <div class="footer-section1">
+
+    </div>
+</body>
+
+</html>
